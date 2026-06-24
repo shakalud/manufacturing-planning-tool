@@ -54,6 +54,30 @@ hazit.db
 
 The public repository does not include any real production database.
 
+## Screenshots
+
+### Main Window
+
+Desktop interface for entering order information, panel sizes, materials and packing settings.
+
+![Main Window](screenshots/main-window.png)
+
+---
+
+### Pack Calculation
+
+Generated packing output with order number, top/bottom material, batch grouping and 52 mm print preview.
+
+![Pack Calculation](screenshots/pack-calculation.png)
+
+---
+
+### 52 mm Thermal Print Preview
+
+Narrow label-style print output optimized for 52 mm usable paper width.
+
+![Thermal Print Preview](screenshots/thermal-print-preview.png)
+
 ## Run on Windows
 
 Double-click:
