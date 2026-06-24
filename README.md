@@ -1,36 +1,79 @@
-# Manufacturing Planning Tool
+# Manufacturing Packing & Production Planning Tool
 
-Production planning and stacking calculation tool developed for real manufacturing workflows.
+Desktop application for production planning, packing calculation and order management in panel manufacturing workflows.
 
 ## Overview
 
-This project is a desktop application designed to support production planning in a sandwich panel manufacturing environment.
+This project is a real-world desktop tool built to support daily manufacturing planning tasks.
 
-The tool helps calculate panel stacking, organize production batches, reduce manual calculation errors, and prepare structured output for narrow-width production printing.
+It helps operators prepare production batches, calculate panel packs, manage order data and generate narrow 52 mm print output for production labels.
+
+The public GitHub version contains no private company data, no service credentials and no production database. The SQLite database is created automatically on first launch.
 
 ## Features
 
-- Panel size and quantity input
-- Stack calculation logic
-- Production batch organization
-- Layout planning support
-- Narrow printer output formatting
-- Custom business rules for manufacturing workflows
-- Desktop GUI interface
+- Manual production order input
+- SQLite database storage
+- Order save, open and replace workflow
+- Top and bottom material fields
+- Custom panels-per-pack setting
+- Template packing mode for repeated packing patterns
+- Roof panel mode with joint configuration
+- Automatic pack calculation
+- Current batch and completed batch preview
+- 52 mm print output for narrow thermal labels
+- English user interface
+- Dark desktop UI inspired by Discord-style colors
 
 ## Tech Stack
 
 - Python
 - Tkinter
 - SQLite
+- HTML print output
+
+## Packing Modes
+
+The application supports two packing approaches:
+
+### Custom Pack Size
+
+The operator selects how many panels should be placed in each pack.
+
+### Template Packing Mode
+
+The application can also use predefined repeated packing patterns for regular and roof panel workflows.
+
+## Database
+
+The application creates a local SQLite database file automatically:
+
+```text
+hazit.db
+```
+
+The public repository does not include any real production database.
+
+## Run on Windows
+
+Double-click:
+
+```text
+run.bat
+```
+
+Or run manually:
+
+```bash
+python manufacturing_planning_tool.py
+```
 
 ## My Role
 
-I designed and developed this tool independently while working in a manufacturing environment.
+I designed and developed this tool to automate repetitive manufacturing planning tasks, reduce manual calculation errors and improve daily production workflow.
 
-The goal was to automate repetitive planning tasks, reduce manual mistakes, and improve daily production workflow.
+## Security & Privacy Note
 
-## Status
+This is a cleaned portfolio version.
 
-Portfolio/demo project.  
-Private production data and company-specific information are not included.
+Private production data, real order history, service account files and internal company-specific files are not included.
